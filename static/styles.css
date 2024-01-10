@@ -1,0 +1,28 @@
+#map { 
+    height: 40vw;
+    border: 1px solid #000; 
+    margin: 0 auto; 
+    }
+
+.navbar a {
+    color: #FF5733; 
+}
+
+.navbar a:hover {
+    color: #C70039;
+}
+
+.centered-table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.centered-table, .centered-table th, .centered-table td {
+    border: 1px solid black; 
+}
+
+.centered-table th, .centered-table td {
+    padding: 5px; 
+}

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Alumni
+{% endblock %}
+
+{% block main %}
+    <table class="centered-table">
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Fir </th>
+                <th>Last</th>
+                <th>Year</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Employer</th>
+            </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+            {% for item in alumni %}
+                <tr>
+                    <td>
+                        {{ item[0] }}
+                    </td>
+                    <td>
+                        {{ item[1] }}
+                    </td>
+                    <td>
+                        {{ item[2] }}
+                    </td>
+                    <td>
+                        {{ item[3] }}
+                    </td>
+                    <td>
+                        {{ item[4] }}
+                    </td>
+                    <td>
+                        {{ item[5] }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
